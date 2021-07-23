@@ -1,0 +1,155 @@
+<script src="http://w.soundcloud.com/player/api.js"></script>
+<iframe id="xoisc" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1220347549&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/c-tr-n-79587673" title="Xôi" target="_blank" style="color: #cccccc; text-decoration: none;">Xôi</a> · <a href="https://soundcloud.com/c-tr-n-79587673/sets/xoiii" title="xoiii" target="_blank" style="color: #cccccc; text-decoration: none;">xoiii</a></div>
+
+<script type="text/javascript">
+widgetIframe = document.querySelector('iframe');
+fixWidget = SC.Widget(widgetIframe);
+fixWidget.setVolume(0.5); //% between 1 and 100
+</script>
+
+
+<h3>Rain</h3>
+<button id="startbtn1">Play</button>
+<button id="pausebtn1">Pause</button>
+
+<h3>Coffeecups</h3>
+<button id="startbtn2">Play</button>
+<button id="pausebtn2">Pause</button>
+
+<h3>Interior</h3>
+<button id="startbtn3">Play</button>
+<button id="pausebtn3">Pause</button>
+
+<h3>Machinery</h3>
+<button id="startbtn4">Play</button>
+<button id="pausebtn4">Pause</button>
+
+<h3>Making Drinks</h3>
+<button id="startbtn5">Play</button>
+<button id="pausebtn5">Pause</button>
+
+<h3>Barista</h3>
+<button id="startbtn6">Play</button>
+<button id="pausebtn6">Pause</button>
+
+<h3>Volume</h3>
+<button id="volume01">0.1</button>
+<button id="volume02">0.2</button>
+<button id="volume03">0.3</button>
+<button id="volume04">0.4</button>
+<button id="volume05">0.5</button>
+<button id="volume06">0.6</button>
+<button id="volume07">0.7</button>
+<button id="volume08">0.8</button>
+<button id="volume09">0.9</button>
+<button id="volume10">1.0</button>
+
+
+<script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script>
+    var rain = new Howl({
+      src: ['rain.mp3'],
+      loop: true,
+      onend: function() {
+    	console.log('Finished!');
+  		}
+    });
+
+    var coffeecups = new Howl({
+      src: ['coffeecups.mp3'],
+      loop: true,
+      onend: function() {
+    	console.log('Finished!');
+  		}
+    });
+
+    var interior = new Howl({
+      src: ['interior.mp3'],
+      loop: true,
+      onend: function() {
+    	console.log('Finished!');
+  		}
+    });
+
+    var machinery = new Howl({
+      src: ['machinery.mp3'],
+      loop: true,
+      onend: function() {
+    	console.log('Finished!');
+  		}
+    });
+
+    var makingdrinks = new Howl({
+      src: ['makingdrinks.mp3'],
+      loop: true,
+      onend: function() {
+    	console.log('Finished!');
+  		}
+    });
+
+    var barista = new Howl({
+      src: ['barista.mp3'],
+      loop: true,
+      onend: function() {
+    	console.log('Finished!');
+  		}
+    });
+
+    $("#startbtn1").click(function() {
+    rain.play()
+  	});
+
+  	$("#pausebtn1").click(function() {
+    rain.pause()
+  	});
+
+  	$("#startbtn2").click(function() {
+    coffeecups.play()
+  	});
+
+  	$("#pausebtn2").click(function() {
+    coffeecups.pause()
+  	});
+
+  	$("#startbtn3").click(function() {
+    interior.play()
+  	});
+
+  	$("#pausebtn3").click(function() {
+    interior.pause()
+  	});
+
+  	$("#startbtn4").click(function() {
+    machinery.play()
+  	});
+
+  	$("#pausebtn4").click(function() {
+    machinery.pause()
+  	});
+
+  	$("#startbtn5").click(function() {
+    makingdrinks.play()
+  	});
+
+  	$("#pausebtn5").click(function() {
+    makingdrinks.pause()
+  	});
+
+  	$("#startbtn6").click(function() {
+    barista.play()
+  	});
+
+  	$("#pausebtn6").click(function() {
+    barista.pause()
+  	});
+
+
+	$("#volume04").click(function(){
+		sound.volume(0.4);
+	});
+  	
+</script>
+
+
+
