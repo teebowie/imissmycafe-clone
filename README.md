@@ -9,4 +9,3 @@
 1. Re-structure code
 2. Work with SC Widget API
 3. Make a good CSS
-4. Volume problem

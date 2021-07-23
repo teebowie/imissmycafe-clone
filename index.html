@@ -11,26 +11,32 @@ fixWidget.setVolume(0.5); //% between 1 and 100
 <h3>Rain</h3>
 <button id="startbtn1">Play</button>
 <button id="pausebtn1">Pause</button>
+<input id="slider1" type="range" min="0" max="100" step="10" value="10" onchange="updateSliderRain(this.value)">
 
 <h3>Coffeecups</h3>
 <button id="startbtn2">Play</button>
 <button id="pausebtn2">Pause</button>
+<input id="slider2" type="range" min="0" max="100" step="10" value="10" onchange="updateSliderCoffeecups(this.value)">
 
 <h3>Interior</h3>
 <button id="startbtn3">Play</button>
 <button id="pausebtn3">Pause</button>
+<input id="slider3" type="range" min="0" max="100" step="10" value="10" onchange="updateSliderInterior(this.value)">
 
 <h3>Machinery</h3>
 <button id="startbtn4">Play</button>
 <button id="pausebtn4">Pause</button>
+<input id="slider4" type="range" min="0" max="100" step="10" value="10" onchange="updateSliderMachinery(this.value)">
 
 <h3>Making Drinks</h3>
 <button id="startbtn5">Play</button>
 <button id="pausebtn5">Pause</button>
+<input id="slider5" type="range" min="0" max="100" step="10" value="10" onchange="updateSliderMakingdrinks(this.value)">
 
 <h3>Barista</h3>
 <button id="startbtn6">Play</button>
 <button id="pausebtn6">Pause</button>
+<input id="slider6" type="range" min="0" max="100" step="10" value="10" onchange="updateSliderBarista(this.value)">
 
 <h3>Volume</h3>
 <button id="volume01">0.1</button>
@@ -148,6 +154,240 @@ fixWidget.setVolume(0.5); //% between 1 and 100
 	$("#volume04").click(function(){
 		sound.volume(0.4);
 	});
+
+  function updateSliderRain(slideAmount){
+    var slider1 = document.getElementById("slider1");
+    if (slideAmount == 0)
+    {
+      rain.volume(0);
+      console.log("dit me")
+    }
+    else if (slideAmount == 10){
+      rain.volume(0.1);
+    }
+    else if (slideAmount == 20){
+      rain.volume(0.2);
+    }
+    else if (slideAmount == 30){
+      rain.volume(0.3);
+    }
+    else if (slideAmount == 40){
+      rain.volume(0.4);
+    }
+    else if (slideAmount == 50){
+      rain.volume(0.5);
+    }
+    else if (slideAmount == 60){
+      rain.volume(0.6);
+    }
+    else if (slideAmount == 70){
+      rain.volume(0.7);
+    }
+    else if (slideAmount == 80){
+      rain.volume(0.8);
+    }
+    else if (slideAmount == 90){
+      rain.volume(0.9);
+    }
+    else if (slideAmount == 100){
+      rain.volume(10);
+    }
+    }
+
+    function updateSliderCoffeecups(slideAmount){
+    var slider1 = document.getElementById("slider2");
+    if (slideAmount == 0)
+    {
+      coffeecups.volume(0);
+      console.log("dit me")
+    }
+    else if (slideAmount == 10){
+      coffeecups.volume(0.1);
+    }
+    else if (slideAmount == 20){
+      coffeecups.volume(0.2);
+    }
+    else if (slideAmount == 30){
+      coffeecups.volume(0.3);
+    }
+    else if (slideAmount == 40){
+      coffeecups.volume(0.4);
+    }
+    else if (slideAmount == 50){
+      coffeecups.volume(0.5);
+    }
+    else if (slideAmount == 60){
+      coffeecups.volume(0.6);
+    }
+    else if (slideAmount == 70){
+      coffeecups.volume(0.7);
+    }
+    else if (slideAmount == 80){
+      coffeecups.volume(0.8);
+    }
+    else if (slideAmount == 90){
+      coffeecups.volume(0.9);
+    }
+    else if (slideAmount == 100){
+      coffeecups.volume(10);
+    }
+    }
+
+    function updateSliderInterior(slideAmount){
+    var slider1 = document.getElementById("slider3");
+    if (slideAmount == 0)
+    {
+      interior.volume(0);
+      console.log("dit me")
+    }
+    else if (slideAmount == 10){
+      interior.volume(0.1);
+    }
+    else if (slideAmount == 20){
+      interior.volume(0.2);
+    }
+    else if (slideAmount == 30){
+      interior.volume(0.3);
+    }
+    else if (slideAmount == 40){
+      interior.volume(0.4);
+    }
+    else if (slideAmount == 50){
+      interior.volume(0.5);
+    }
+    else if (slideAmount == 60){
+      interior.volume(0.6);
+    }
+    else if (slideAmount == 70){
+      interior.volume(0.7);
+    }
+    else if (slideAmount == 80){
+      interior.volume(0.8);
+    }
+    else if (slideAmount == 90){
+      interior.volume(0.9);
+    }
+    else if (slideAmount == 100){
+      interior.volume(10);
+    }
+    }
+
+    function updateSliderMachinery(slideAmount){
+    var slider1 = document.getElementById("slider4");
+    if (slideAmount == 0)
+    {
+      machinery.volume(0);
+      console.log("dit me")
+    }
+    else if (slideAmount == 10){
+      machinery.volume(0.1);
+    }
+    else if (slideAmount == 20){
+      machinery.volume(0.2);
+    }
+    else if (slideAmount == 30){
+      machinery.volume(0.3);
+    }
+    else if (slideAmount == 40){
+      machinery.volume(0.4);
+    }
+    else if (slideAmount == 50){
+      machinery.volume(0.5);
+    }
+    else if (slideAmount == 60){
+      machinery.volume(0.6);
+    }
+    else if (slideAmount == 70){
+      machinery.volume(0.7);
+    }
+    else if (slideAmount == 80){
+      machinery.volume(0.8);
+    }
+    else if (slideAmount == 90){
+      machinery.volume(0.9);
+    }
+    else if (slideAmount == 100){
+      machinery.volume(10);
+    }
+    } 
+
+    function updateSliderMakingdrinks(slideAmount){
+    var slider1 = document.getElementById("slider5");
+    if (slideAmount == 0)
+    {
+      makingdrinks.volume(0);
+      console.log("dit me")
+    }
+    else if (slideAmount == 10){
+      makingdrinks.volume(0.1);
+    }
+    else if (slideAmount == 20){
+      makingdrinks.volume(0.2);
+    }
+    else if (slideAmount == 30){
+      makingdrinks.volume(0.3);
+    }
+    else if (slideAmount == 40){
+      makingdrinks.volume(0.4);
+    }
+    else if (slideAmount == 50){
+      makingdrinks.volume(0.5);
+    }
+    else if (slideAmount == 60){
+      makingdrinks.volume(0.6);
+    }
+    else if (slideAmount == 70){
+      makingdrinks.volume(0.7);
+    }
+    else if (slideAmount == 80){
+      makingdrinks.volume(0.8);
+    }
+    else if (slideAmount == 90){
+      makingdrinks.volume(0.9);
+    }
+    else if (slideAmount == 100){
+      makingdrinks.volume(10);
+    }
+    }
+
+    function updateSliderBarista(slideAmount){
+    var slider1 = document.getElementById("slider6");
+    if (slideAmount == 0)
+    {
+      barista.volume(0);
+      console.log("dit me")
+    }
+    else if (slideAmount == 10){
+      barista.volume(0.1);
+    }
+    else if (slideAmount == 20){
+      barista.volume(0.2);
+    }
+    else if (slideAmount == 30){
+      rain.volume(0.3);
+    }
+    else if (slideAmount == 40){
+      barista.volume(0.4);
+    }
+    else if (slideAmount == 50){
+      barista.volume(0.5);
+    }
+    else if (slideAmount == 60){
+      barista.volume(0.6);
+    }
+    else if (slideAmount == 70){
+      barista.volume(0.7);
+    }
+    else if (slideAmount == 80){
+      barista.volume(0.8);
+    }
+    else if (slideAmount == 90){
+      barista.volume(0.9);
+    }
+    else if (slideAmount == 100){
+      barista.volume(10);
+    }
+    }
   	
 </script>
 
