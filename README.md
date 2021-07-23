@@ -4,7 +4,7 @@
 
 *Work in progress*
 
-[Offical website of project](https://teebowie.github.io/imissmycafe-clone/)
+[Official website of project](https://teebowie.github.io/imissmycafe-clone/)
 
 ---
 # To-do list
