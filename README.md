@@ -4,8 +4,12 @@
 
 *Work in progress*
 
+[Offical website of project](https://teebowie.github.io/imissmycafe-clone/)
+
 ---
 # To-do list
 1. Re-structure code
-2. Work with SC Widget API
-3. Make a good CSS
+2. Better HTML Structure
+3. Work with SC Widget API
+4. Make a good CSS
+
